@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link href="estilos.css" rel="stylesheet" />
+
+      <script>
+          window.onload = function() {
+         document.getElementById('Ingresar').addEventListener(`click`,alerta,false);
+         
+          function alerta(){
+             var pwd = document.getElementById("Contra").value;
+             var user = document.getElementById("usuario").value;
+             
+             if (pwd.length == 0 ) {
+                  alert("¡INGRESE CONTRASEÑA!");
+                  return false;
+                }
+             if(user.length == 0){
+                  alert("¡INGRESE NOMBRE DE USUARIO!");
+                  return false;
+               }
+             if (user == "Alumno" && pwd == "123") {
+                    alert("¡Los datos son correctos! ");
+                    return true;
+                } else {
+                    alert("¡El Usuario y/o Constraseña es incorrecto!");
+                    return false; 
+                }
+        }
+    }
+    </script>
+
 </head>
+
 <body>
-    <form action="">
-        <h2>Inicio de sesión</h2>
-        <input type="text" placeholder="&#128100; Usuario" name="usuario">
-        <input type="password" placeholder="&#9919; Contraseña" name="Clave">
-        <input type="submit" value="Ingresar">
+    <form>
+        <h2>INICIAR SESIÓN</h2>
+        <input type="text" placeholder="&#128100; Usuario" id="usuario">
+        <input type="password" placeholder="&#9919; Contraseña" id="Contra">
+        <input type="submit" value= "Ingresar" id="Ingresar">
     </form>
 </body>
 </html>
