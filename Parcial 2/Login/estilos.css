@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: century gothic;
-	text-align: center;
+	
 }
 
 body{
@@ -20,6 +20,9 @@ form {
     margin-top: 90px;
 	padding-top: 30px;
 	margin-bottom: 30px
+}
+h2{
+    text-align: center;
 }
 
 input {
