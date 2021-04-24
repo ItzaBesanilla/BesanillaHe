@@ -11,6 +11,9 @@
           window.onload = function() {
          document.getElementById('Ingresar').addEventListener(`click`,alerta,false);
          
+         const Nombre= "Alumno";
+         const Passw= "123";
+
           function alerta(){
              var pwd = document.getElementById("Contra").value;
              var user = document.getElementById("usuario").value;
@@ -23,7 +26,7 @@
                   alert("¡INGRESE NOMBRE DE USUARIO!");
                   return false;
                }
-             if (user == "Alumno" && pwd == "123") {
+             if (user == Nombre && pwd == Passw) {
                     alert("¡Los datos son correctos! ");
                     return true;
                 } else {
