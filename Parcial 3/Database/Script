@@ -3,12 +3,10 @@ Create table Usuario
 
 ( idUsuario smallint not null auto_increment,
 nombre varchar(30),
-apellidoPat varchar(25),
-apellidoMat varchar(25),
 Usuario		varchar(10),
 Contraseña	varchar(10),
 primary key (idUsuario)
 );
-insert into Usuario (Nombre, ApellidoPat, ApellidoMat, Usuario, contraseña)
-values (null, 'Itzamara', 'Besanilla', 'Hernandez', 'ItzaBH', 'Pasw0rd') ;
-insert into Usuario values (null, 'Eduardo', 'Amador', 'Delgado', 'Lalo58', '123A');
+insert into Usuario (Nombre, Usuario, contraseña)
+values ('Itzamara Besanilla Hdz' 'Itzamara', 'BesanillaI') ;
+insert into Usuario values (null, 'Eduardo Amador Delgado', 'Eduardo', 'AmadorE');
