@@ -1,17 +1,18 @@
 CREATE DATABASE BesanillaHe;
 USE BesanillaHe;
-CREATE TABLE Usuarios 
-( idUsuario smallint not null auto_increment,
-Nombre varchar(30),
-apellidoPat varchar(25),
-apellidoMat varchar(25),
-carrera varchar(25),
-Usuario		varchar(10),
-Contraseña	varchar(40),
-primary key (idUsuario)
+CREATE TABLE DatosAlumno 
+( 
+NoControl varchar(10),
+Nombre varchar(50),
+Carrera varchar(35),
+Semestre varchar(25),
+Email varchar(50),
+
+primary key (NoControl)
 );
-
-INSERT INTO `Usuarios` (`Nombre`,`ApellidoPat`,`ApellidoMat`,'Carrera',`Usuario`,`Contraseña`) VALUES 
- ('Itzamara','Besanilla','Hernandez','Sistemas computacionales','ITZAMARA','BESANILLA'),
  
+INSERT INTO `DatosAlumno` (`NoControl`,`Nombre`,`Carrera`,`Semestre`,`Email`) 
+VALUES ('18100153','Itzamara Besanilla Hdz','Sistemas Computacionales','Séptimo','18100153@nlaredo.tecnm.mx'),
+('18100190', 'Eduardo Delgado Amador','Informática','Tercero','Eduardo@hotmail.com') ;
 
+select * from DatosAlumno;
