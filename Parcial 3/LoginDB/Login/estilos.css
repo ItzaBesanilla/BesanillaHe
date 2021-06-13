@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	
+}
+
+body{
+	background-image:url(../LoginDB/Login/fondolegal.jpg);
+	width: 100%;
+	height:100%vh;
+	background-size: cover;
+    color:white;
+}
+
+form {
+	padding: 50px 25px;
+	background-color: #381b1ba6;
+	margin: calc(28% + 100px);
+    margin-top: 90px;
+	padding-top: 30px;
+	margin-bottom: 30px
+}
+h2{
+    text-align: center;
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 12px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 17px
+}
+
+input[type='submit']{
+	background: linear-gradient(#ffda63, #ffb940);
+    color: brown;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-bottom: 0;
+	width: calc(90% - 20px);
+	margin: 0 10%;
+	margin-top: 25px;
+	border: none;
+}
+input[type="submit"]:hover {
+    opacity: 9;
+}
+
+input[type="submit"]:active {
+transform: scale(0.97);
+}
+
+
+
+	
+	
