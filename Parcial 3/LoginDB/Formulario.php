@@ -10,6 +10,7 @@
  </head>
  <body>
   <br>
+  <div class="container mt-3">
     <?php
     
     session_start();
@@ -29,6 +30,11 @@
          <br><h2>REGISTRO DEL ALUMNO</h2> <br><br>
 
           <div class="row">
+
+          <div class="form-group col-xs-4">
+            <strong> <label for="NoRegistro" class="control-label">ID Registro</label></strong>
+            <input id="NoRegistro" type="text" class="form-control" placeholder="00"disabled/>
+      </div>
                  <div class="form-group col-sm-12 col-md-6 col-lg-3">
                      <strong> <label for="NoControl" class="control-label">Número de control</label></strong>
                       <input name="NoControl" type="text" class="form-control" placeholder="Ej. 18100153"/> 
@@ -99,7 +105,7 @@
       </form>
 
       <form  action="Consulta.php" method="POST">
-         <button type ="submit" class="btn btn-primary">Consultar datos</button>
+         <button type ="submit" class="btn btn-primary">Consultar registros</button>
        </form>
       <br>
        <form  action="Update.php" method="POST">
@@ -117,6 +123,7 @@
        <br>
        
      
+  </div>
   </div>
 </body>
 </html>
