@@ -1,7 +1,11 @@
 <?php
+function conectar(){
+    $conexion= mysqli_connect("localhost","root","");
+    $db="besanillahe";
 
-$conexion= mysqli_connect("localhost","root","","besanillahe") or die("error de conexion");
-
+   mysqli_select_db($conexion,$db);
+    return $conexion;
+}
 
 
 ?>

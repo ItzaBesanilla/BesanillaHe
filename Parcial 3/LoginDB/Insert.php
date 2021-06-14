@@ -1,6 +1,7 @@
 <?php
 
 include('ConexionDB.php');
+$conexion= mysqli_connect("localhost","root","","besanillahe");
 
 $NoControl=$_POST['NoControl'];
 $Semestre=$_POST['Semestre'];
